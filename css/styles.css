@@ -1,0 +1,111 @@
+/* 
+Creá un sitio  web donde haya un formulario de registro de usuarios para entrenar en un gimnasio,
+Un formulario donde los usuarios se registren para entrenar,
+elijan su tipo de plan y horarios.
+
+La web debe estar completa, no solo el HTML, el contenido de la página, también: menú, títulos, imágenes, etc.  
+
+Completá el formulario y dale estilo con lo que hemos aprendido de CSS: text-, font-, las propiedades de las cajas, los pseudoselectores y box-model.  
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a,
+p {
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-section {
+    background-image: url("../assets/images/pexels-leonardho-1552242.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h2 {
+    font-size: 40px;
+}
+
+.hero-section a {
+    margin-top: 10px;
+    background-color: #34b552;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40vw;
+    max-width: 500px;
+}
+
+input,
+select {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #34b552;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
